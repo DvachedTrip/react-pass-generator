@@ -1,0 +1,70 @@
+/* === CSS RESET (без ломания форм) === */
+
+/* box-sizing + убираем отступы */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* html/body */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* списки */
+ul,
+ol {
+    list-style: none;
+}
+
+/* ссылки */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* медиа */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* таблицы */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* заголовки */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+}
+
+/* textarea */
+textarea {
+    resize: none;
+}
+
+/* fieldset */
+fieldset {
+    border: none;
+}
