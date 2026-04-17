@@ -1,16 +1,66 @@
-# React + Vite
+# Генератор паролей (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Простое веб-приложение для генерации безопасных паролей с гибкой настройкой параметров. Проект реализован с использованием React и Vite.
 
-Currently, two official plugins are available:
+## Скриншоты
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Скриншот приложения](./screenshots/image.png)
 
-## React Compiler
+## Функционал
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Генерация пароля на основе выбранных параметров
+- Настройка длины пароля
+- Включение/отключение:
+    - Заглавных букв
+    - Цифр
+    - Специальных символов
 
-## Expanding the ESLint configuration
+- Копирование пароля в буфер обмена
+- Сохранение сгенерированных паролей
+- Хранение данных в `localStorage`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Использование
+
+1. Установи зависимости:
+
+    ```bash
+    npm install
+    ```
+
+2. Запусти проект:
+
+    ```bash
+    npm run dev
+    ```
+
+3. Открой приложение в браузере (обычно `http://localhost:5173`)
+
+4. Используй интерфейс:
+    - Настрой параметры генерации
+    - Нажми **Сгенерировать**
+    - При необходимости:
+        - **Скопировать** – копирует пароль в буфер обмена
+        - **Сохранить** – добавляет пароль в список сохранённых
+
+## Технологии
+
+- React
+- Vite
+- JavaScript (ES6+)
+- HTML / CSS
+- localStorage API
+
+## Особенности реализации
+
+- Использование React hooks (`useState`, `useEffect`)
+- Сохранение данных в `localStorage`
+- Компонентный подход
+- Разделение логики генерации и UI
+
+---
+
+Если хочешь, могу ещё:
+
+- оформить README более “GitHub-профессионально” (с бейджами, версиями, демо)
+- или добавить секцию структуры проекта (`src/components`, `utils` и т.д.)
+- или сделать английскую версию
